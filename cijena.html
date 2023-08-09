@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>danijel</TITLE>
+  <title>Kristal</TITLE>
   <link href="css/styles.css" rel="stylesheet" type="text/css">
 </head>
 <script defer type="text/javascript" src="/js/index.js"></script>
@@ -28,9 +28,9 @@
 
 
 
+  <main>
 
 
-  <body>
     <section class="section-cijena">
 
       <h1 class="title">Cijena</h1>
@@ -39,25 +39,11 @@
         <h3>Približno odredite cijenu usluge</h3>
 
         <form class="form-cijena" name="forma" action="" method="POST">
-          <!-- <table>
-            <tr>
-              <td>Unesite broj kvadratnih metara (m<sup>2</sup>) : </td>
-              <td><input type="number" name="kvadrat" onkeyup="if(this.value<0){this.value= this.value * -1}" min="0.1">
-              </td>
-            </tr>
-            <tr>
-              <td>Približna cijena u KM: </td>
-              <td><input type="number" name="cijena" readonly></td>
 
-            </tr>
-            <tr>
-              <td><input class="button button-accent" type="button" value="Odredi"
-                  onClick="handleCalculateButtonClicked()"></td>
-              <td><input class="button button-accent" type="reset" value="Ponisti"></td>
-            </tr>
-          </table> -->
           <p>Unesite broj kvadratnih metara (m<sup>2</sup>) : </p>
           <input type="number" name="kvadrat" onkeyup="if(this.value<0){this.value= this.value * -1}" min="0.1">
+          <span class="error-message" style="color: red;"></span>
+
 
           <p>Približna cijena u KM: </p>
           <input type="number" name="cijena" readonly>
@@ -70,49 +56,50 @@
       </div>
 
     </section>
-    <footer>
-      <div class="container">
-        <div class="col-3">
-          <p>Agencija Kristal je osnovana marta 2020. godine i bavi se uslugama čišćenja i održavanja svih vrsta
-            mekanih
-            i tvrdih podnih obloga. Kristal agencija za čišćenje se također bavi uslugama dnevnog održavanja i
-            generalnih čišćenja velikih
-            poslovnih objekata i ustanova.
-            Radovi se izvode sa najsavremenijim mašinama marke KARCHER te upotrebljava u svom radu najdjelotvornija
-            hemijska sredstva dozvoljena za ljudsku upotrebu po standardima Evropske unije. </p>
-        </div>
-
-        <div class="col-1">
-          <ul class="unstyled-list">
-            <li><strong>Kontakt</strong></li>
-            <li>kristal@clean.com</li>
-            <li>(311) 555-333 </li>
-
-          </ul>
-        </div>
-
-        <div class="col-1">
-          <ul class="unstyled-list">
-            <li><strong>Lokacija</strong></li>
-            <li>Banjaluka</li>
-            <li>Doboj</li>
-            <li>Bijeljina</li>
-
-          </ul>
-        </div>
-
-        <div class="col-1">
-          <ul class="unstyled-list">
-            <li><strong>Radno vrijeme</strong></li>
-            <li>Ponedeljak - Subota</li>
-            <li>08:00 - 16:00</li>
-            <li>Nedjeljom ne radimo! </li>
-
-          </ul>
-        </div>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="col-3">
+        <p>Agencija Kristal je osnovana marta 2020. godine i bavi se uslugama čišćenja i održavanja svih vrsta
+          mekanih
+          i tvrdih podnih obloga. Kristal agencija za čišćenje se također bavi uslugama dnevnog održavanja i
+          generalnih čišćenja velikih
+          poslovnih objekata i ustanova.
+          Radovi se izvode sa najsavremenijim mašinama marke KARCHER te upotrebljava u svom radu najdjelotvornija
+          hemijska sredstva dozvoljena za ljudsku upotrebu po standardima Evropske unije. </p>
       </div>
-    </footer>
 
-  </body>
+      <div class="col-1">
+        <ul class="unstyled-list">
+          <li><strong>Kontakt</strong></li>
+          <li>kristal@clean.com</li>
+          <li>(311) 555-333 </li>
+
+        </ul>
+      </div>
+
+      <div class="col-1">
+        <ul class="unstyled-list">
+          <li><strong>Lokacija</strong></li>
+          <li>Banjaluka</li>
+          <li>Doboj</li>
+          <li>Bijeljina</li>
+
+        </ul>
+      </div>
+
+      <div class="col-1">
+        <ul class="unstyled-list">
+          <li><strong>Radno vrijeme</strong></li>
+          <li>Ponedeljak - Subota</li>
+          <li>08:00 - 16:00</li>
+          <li>Nedjeljom ne radimo! </li>
+
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
 
 </html>

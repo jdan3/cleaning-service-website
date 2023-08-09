@@ -5,11 +5,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Danijel Jotanovic</title>
+  <title>Kristal</title>
   <link href="css/styles.css" rel="stylesheet" type="text/css">
 
 
-  <script defer src="js/index.js"></script>
+  <script defer src="./index.js"></script>
 </head>
 
 <body>
@@ -26,70 +26,71 @@
       </ul>
     </nav>
   </header>
+  <main>
+    <section class="section-contact">
+      <h1 class="title">Kontakt
+      </h1>
 
-  <section class="section-contact">
-    <h1 class="title">Kontakt
-    </h1>
+      <div class="container">
 
-    <div class="container">
+        <div class="address" id="container1">
+          <address>
 
-      <div class="address" id="container1">
-        <address>
+            Pišite nam <a href="kristal@clean.com">kristal@clean.com</a>.<br>
+            Pozovite nas <a href="tel:+13115552368">(311) 555-333</a><br><br>
+            Posjetite nas:<br>
+            Pionirska bb, Banja Luka<br>
+            BiH
+          </address>
+        </div>
+        <div class="address" id="container2">
+          <address>
 
-          Pišite nam <a href="kristal@clean.com">kristal@clean.com</a>.<br>
-          Pozovite nas <a href="tel:+13115552368">(311) 555-333</a><br><br>
-          Posjetite nas:<br>
-          Pionirska bb, Banja Luka<br>
-          BiH
-        </address>
+            Pišite nam <a href="mailto:kristal@clean.com">kristal@clean.com</a>.<br>
+            Pozovite nas <a href="tel:+13115552368">(311) 555-333</a><br><br>
+            Posjetite nas:<br>
+            Kolubarska bb, Doboj<br>
+            BiH
+          </address>
+        </div>
+        <div class="address" id="container3">
+          <address>
+
+            Pišite nam <a href="mailto:kristal@clean.com">kristal@clean.com</a>.<br>
+            Pozovite nas <a href="tel:+13115552368">(311) 555-333</a><br><br>
+            Posjetite nas:<br>
+            Jermenska bb, Bijeljina<br>
+            BiH
+          </address>
+        </div>
       </div>
-      <div class="address" id="container2">
-        <address>
 
-          Pišite nam <a href="mailto:kristal@clean.com">kristal@clean.com</a>.<br>
-          Pozovite nas <a href="tel:+13115552368">(311) 555-333</a><br><br>
-          Posjetite nas:<br>
-          Kolubarska bb, Doboj<br>
-          BiH
-        </address>
-      </div>
-      <div class="address" id="container3">
-        <address>
+    </section>
 
-          Pišite nam <a href="mailto:kristal@clean.com">kristal@clean.com</a>.<br>
-          Pozovite nas <a href="tel:+13115552368">(311) 555-333</a><br><br>
-          Posjetite nas:<br>
-          Jermenska bb, Bijeljina<br>
-          BiH
-        </address>
-      </div>
+    <div class="container-form">
+      <form class="form-contact" action="https://formsubmit.co/67917f53bd596bfc96c2aff2159d2831 " method="POST">
+        <h3>Kontaktirajte nas!</h3>
+        <input type="hidden" name="subject" value="subject email" required>
+        <input type="text" name="name" id="name" placeholder="your name" required>
+        <input type="email" name="email" id="email" placeholder="Email id" required>
+        <input type="hidden" name="_next" value="http://127.0.0.1:5501/kristal.html">
+        <input type="text" id="phone" placeholder="Phone number" required>
+        <textarea id="message" name="message" rows="4" placeholder="How can we help you" required></textarea>
+        <button type="submit">Send</button>
+
+      </form>
+
+
+
+
     </div>
-
-  </section>
-
-  <div class="container-form">
-    <form class="form-contact" action="https://formsubmit.co/67917f53bd596bfc96c2aff2159d2831 " method="POST">
-      <h3>Kontaktirajte nas!</h3>
-      <input type="hidden" name="subject" value="subject email" required>
-      <input type="text" name="name" id="name" placeholder="your name" required>
-      <input type="email" name="email" id="email" placeholder="Email id" required>
-      <input type="hidden" name="_next" value="http://127.0.0.1:5501/kristal.html">
-      <input type="text" id="phone" placeholder="Phone number" required>
-      <textarea id="message" name="message" rows="4" placeholder="How can we help you" required></textarea>
-      <button type="submit">Send</button>
-
-    </form>
-
-
-
-
-  </div>
-
+  </main>
 
   <footer>
     <div class="container">
       <div class="col-3">
-        <p>Agencija Kristal je osnovana marta 2020. godine i bavi se uslugama čišćenja i održavanja svih vrsta mekanih i
+        <p>Agencija Kristal je osnovana marta 2020. godine i bavi se uslugama čišćenja i održavanja svih vrsta mekanih
+          i
           tvrdih podnih obloga. Kristal agencija za čišćenje se također bavi uslugama dnevnog održavanja i generalnih
           čišćenja velikih
           poslovnih objekata i ustanova.
@@ -127,23 +128,7 @@
       </div>
     </div>
   </footer>
-  <!-- <script src="https://smtpjs.com/v3/smtp.js
-"></script> -->
-  <!-- <script>
-    function sendEmail() {
-      Email.send({
-        Host: "smtp.meogl.com",
-        Username: "foxiic42@gmail.com",
-        Password: "password",
-        To: 'hicohe5092@meogl.com',
-        From: document.getElementById("email.value"),
-        Subject: "New Contact Form Inquiery",
-        Body: "Name: " + document.getElementById("name").value + "<br> Email: " + document.getElementById("email") + "<br> Phone: " + document.getElementById("phone").value + "<br> Message: " + document.getElementById("message").value
-      }).then(
-        message => alert("Message Sent Succesfully")
-      );
-    }
-  </script> -->
+
 </body>
 
 </html>
